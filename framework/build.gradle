@@ -25,6 +25,10 @@ ext {
 buildscript {
     repositories {
         google()
+        // due Maven added due to JCenter sunset - ref: https://jfrog.com/blog/into-the-sunset-bintray-jcenter-gocenter-and-chartcenter/
+        mavenCentral()
+        maven { url 'https://plugins.gradle.org/m2/' }
+        maven { url 'https://groovy.jfrog.io/artifactory/libs-release/' }
         jcenter()
     }
 
@@ -40,6 +44,10 @@ buildscript {
 allprojects {
     repositories {
         google()
+        // due Maven added due to JCenter sunset - ref: https://jfrog.com/blog/into-the-sunset-bintray-jcenter-gocenter-and-chartcenter/
+        mavenCentral()
+        maven { url 'https://plugins.gradle.org/m2/' }
+        maven { url 'https://groovy.jfrog.io/artifactory/libs-release/' }
         jcenter()
     }
 }
